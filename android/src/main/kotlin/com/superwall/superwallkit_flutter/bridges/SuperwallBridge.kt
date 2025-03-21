@@ -279,8 +279,6 @@ class SuperwallBridge(
                             call.argument<Map<String, Any>>("options")?.let { optionsValue ->
                                 JsonExtensions.superwallOptionsFromJson(optionsValue)
                             }
-                        options.shouldObservePurchases = true
-                        print("shouldObservePurchases = true")asd
                         Superwall.configure(
                             applicationContext = this@SuperwallBridge.context.applicationContext as Application,
                             apiKey = apiKey,
